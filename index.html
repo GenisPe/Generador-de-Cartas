@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Generador de cartas de póker</title>
+    <meta name="description" content="Ejercicio: genera una carta aleatoria de póker al pulsar un botón." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="app">
+        <header>
+            <h1>Generador de cartas de póker</h1>
+        </header>
+        <section class="table" aria-live="polite">
+            <article id="card" class="card" role="img" aria-label="Carta de póker aleatoria">
+                <div class="corner top" id="corner-top">A♠</div>
+                <div class="center-suit" id="center">♠</div>
+                <div class="corner bottom" id="corner-bottom">A♠</div>
+            </article>
+        </section>
+        <div class="actions">
+            <label>
+                Ancho :
+                <input id="widthInput" type="number" min="100" max="800" value="240" />
+            </label>
+            <label>
+                Alto :
+                <input id="heightInput" type="number" min="100" max="1200" value="336" />
+            </label>
+            <button id="btn" type="button" aria-label="Generar nueva carta">Generar nueva carta</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
