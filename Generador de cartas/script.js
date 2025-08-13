@@ -19,11 +19,11 @@ const $heightInput = document.getElementById("heightInput");
 function drawRandomCard() {
   const rank = randomItem(RANKS);
   const suit = randomItem(SUITS);
-  const text = `${rank}${suit.symbol}`;
+  const text = `${rank}`;
 
-  $cornerTop.textContent = text;
-  $cornerBottom.textContent = text;
-  $center.textContent = suit.symbol;
+  $cornerTop.textContent = suit.symbol;
+  $cornerBottom.textContent = suit.symbol;
+  $center.textContent = text;
   $widthInput.addEventListener("input", applyCardSize);
   $heightInput.addEventListener("input", applyCardSize);
 
@@ -60,5 +60,5 @@ window.addEventListener('keydown', (ev) => {
 });
 
 drawRandomCard();
-setInterval(drawRandomCard, 5000);
+setInterval(drawRandomCard, 10000);
 applyCardSize();
