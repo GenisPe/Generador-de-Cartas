@@ -60,6 +60,7 @@ h1 {
     display: grid; 
     place-items: center; 
     font-size: clamp(6.2rem, 6vw + 1rem, 5rem); 
+    color: #000000 !important;
 }
 .red { 
     color: #c1121f; 
